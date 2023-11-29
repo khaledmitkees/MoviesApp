@@ -7,11 +7,20 @@
 
 import UIKit
 
-class MoviesListViewController: UIViewController {
+final class MoviesListViewController: UIViewController, StoryboardInstantiable {
+    
+    var viewModel: MoviesListViewModel?
+    
+    static func create(with viewModel: MoviesListViewModel) -> MoviesListViewController {
+        let view = MoviesListViewController.instantiateViewController()
+        view.viewModel = viewModel
+        return view
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = .red
         // Do any additional setup after loading the view.
     }
 
