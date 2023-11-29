@@ -8,16 +8,25 @@
 import UIKit
 
 class MoviesListTableViewCell: UITableViewCell {
+    
+    static let reuseIdentifier = String(describing: MoviesListTableViewCell.self)
+    static let height = CGFloat(120)
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var movieImageView: UIImageView!
+    @IBOutlet weak var movieTitle: UILabel!
+    @IBOutlet weak var movieOverView: UILabel!
+    
+
+    func configure(with movie: MoviesListDisplayModel) {
+        movieTitle.text = movie.title
+        movieOverView.text = movie.overview
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        movieImageView.image = nil
+        movieTitle.text = nil
+        movieOverView.text = nil
     }
     
 }
