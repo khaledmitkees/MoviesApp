@@ -22,7 +22,7 @@ protocol NetworkRequestRepresentable {
 
 extension NetworkRequestRepresentable {
     func urlRequest(with config: URLConfigurationContract) throws -> URLRequest {
-        let url = try getUrl()
+        let url = try getUrl(with: config)
         var urlRequest = URLRequest(url: url)
         var allHeaders: [String: String] = config.headers
         headerParameters.forEach { allHeaders.updateValue($1, forKey: $0) }
@@ -32,8 +32,12 @@ extension NetworkRequestRepresentable {
         return urlRequest
     }
     
-    private func getUrl() throws -> URL {
-        guard var urlComponents = URLComponents(string: path) else { throw RequestGenerationError.invalidURL }
+    private func getUrl(with config: URLConfigurationContract) throws -> URL {
+        
+        let baseURL = config.baseURL.absoluteString
+        let endpoint = baseURL.appending(path)
+        
+        guard var urlComponents = URLComponents(string: endpoint) else { throw RequestGenerationError.invalidURL }
         
         var urlQueryItems = [URLQueryItem]()
         let queryParameters = try queryParametersEncodable?.toDictionary()
