@@ -8,5 +8,9 @@
 import Foundation
 
 protocol MoviesListRepository {
-    func getMovies()
+    @discardableResult
+    func fetchMoviesList(
+        page: Int,
+        completion: @escaping (Result<MovieListResponse, Error>) -> Void
+    ) -> Cancellable?
 }
