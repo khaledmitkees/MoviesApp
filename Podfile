@@ -6,7 +6,6 @@ target 'MoviesApp' do
   use_frameworks!
 
   # Pods for MoviesApp
-pod 'SDWebImage'
 
   target 'MoviesAppTests' do
     inherit! :search_paths
