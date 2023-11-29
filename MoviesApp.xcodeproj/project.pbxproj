@@ -30,6 +30,35 @@
 		0B9E19AD2B15ECF0009C5719 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19AB2B15ECF0009C5719 /* Movie.swift */; };
 		0B9E19AF2B15ED1E009C5719 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19AE2B15ED1E009C5719 /* MovieListResponse.swift */; };
 		0B9E19B02B15ED1E009C5719 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19AE2B15ED1E009C5719 /* MovieListResponse.swift */; };
+		0B9E19B52B1603E0009C5719 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19B42B1603E0009C5719 /* NetworkLogger.swift */; };
+		0B9E19B62B1603E0009C5719 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19B42B1603E0009C5719 /* NetworkLogger.swift */; };
+		0B9E19CB2B1628F3009C5719 /* MoviesListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19A22B15E012009C5719 /* MoviesListRepository.swift */; };
+		0B9E19CE2B163476009C5719 /* URLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19CC2B163476009C5719 /* URLConfiguration.swift */; };
+		0B9E19CF2B163476009C5719 /* URLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19CC2B163476009C5719 /* URLConfiguration.swift */; };
+		0B9E19D02B163476009C5719 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19CD2B163476009C5719 /* Endpoint.swift */; };
+		0B9E19D12B163476009C5719 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19CD2B163476009C5719 /* Endpoint.swift */; };
+		0B9E19D32B1634CC009C5719 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19D22B1634CC009C5719 /* NetworkService.swift */; };
+		0B9E19D42B1634CC009C5719 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19D22B1634CC009C5719 /* NetworkService.swift */; };
+		0B9E19D92B16419A009C5719 /* URLSession + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19D82B164199009C5719 /* URLSession + Extension.swift */; };
+		0B9E19DA2B16419A009C5719 /* URLSession + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19D82B164199009C5719 /* URLSession + Extension.swift */; };
+		0B9E19DC2B164483009C5719 /* NetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19DB2B164483009C5719 /* NetworkSessionManager.swift */; };
+		0B9E19DD2B164483009C5719 /* NetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19DB2B164483009C5719 /* NetworkSessionManager.swift */; };
+		0B9E19E02B164662009C5719 /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19DF2B164662009C5719 /* RepositoryTask.swift */; };
+		0B9E19E12B164662009C5719 /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19DF2B164662009C5719 /* RepositoryTask.swift */; };
+		0B9E19E32B172292009C5719 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19E22B172292009C5719 /* DataTransferService.swift */; };
+		0B9E19E42B172292009C5719 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19E22B172292009C5719 /* DataTransferService.swift */; };
+		0B9E19E72B1728E3009C5719 /* DataTransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19E62B1728E3009C5719 /* DataTransferError.swift */; };
+		0B9E19E82B1728E3009C5719 /* DataTransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19E62B1728E3009C5719 /* DataTransferError.swift */; };
+		0B9E19EA2B172929009C5719 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19E92B172929009C5719 /* DispatchQueue+Extension.swift */; };
+		0B9E19EB2B172929009C5719 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19E92B172929009C5719 /* DispatchQueue+Extension.swift */; };
+		0B9E19ED2B175B93009C5719 /* URLConfigurationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19EC2B175B93009C5719 /* URLConfigurationMock.swift */; };
+		0B9E19EF2B175BDD009C5719 /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19EE2B175BDD009C5719 /* NetworkSessionManagerMock.swift */; };
+		0B9E19F12B175C24009C5719 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19F02B175C24009C5719 /* NetworkServiceTests.swift */; };
+		0B9E19F32B176799009C5719 /* EndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19F22B176799009C5719 /* EndpointMock.swift */; };
+		0B9E19F52B1767F5009C5719 /* NetworkLoggerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19F42B1767F5009C5719 /* NetworkLoggerMock.swift */; };
+		0B9E19F82B176B76009C5719 /* NetworkRequestRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19F72B176B76009C5719 /* NetworkRequestRepresentable.swift */; };
+		0B9E19F92B176C2D009C5719 /* NetworkRequestRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19F72B176B76009C5719 /* NetworkRequestRepresentable.swift */; };
+		0B9E19FB2B177406009C5719 /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19FA2B177406009C5719 /* DataTransferServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +101,23 @@
 		0B9E19A82B15E761009C5719 /* MoviesListRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListRepositoryImpl.swift; sourceTree = "<group>"; };
 		0B9E19AB2B15ECF0009C5719 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		0B9E19AE2B15ED1E009C5719 /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
+		0B9E19B42B1603E0009C5719 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		0B9E19CC2B163476009C5719 /* URLConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConfiguration.swift; sourceTree = "<group>"; };
+		0B9E19CD2B163476009C5719 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		0B9E19D22B1634CC009C5719 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0B9E19D82B164199009C5719 /* URLSession + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession + Extension.swift"; sourceTree = "<group>"; };
+		0B9E19DB2B164483009C5719 /* NetworkSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManager.swift; sourceTree = "<group>"; };
+		0B9E19DF2B164662009C5719 /* RepositoryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTask.swift; sourceTree = "<group>"; };
+		0B9E19E22B172292009C5719 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		0B9E19E62B1728E3009C5719 /* DataTransferError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferError.swift; sourceTree = "<group>"; };
+		0B9E19E92B172929009C5719 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
+		0B9E19EC2B175B93009C5719 /* URLConfigurationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConfigurationMock.swift; sourceTree = "<group>"; };
+		0B9E19EE2B175BDD009C5719 /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
+		0B9E19F02B175C24009C5719 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		0B9E19F22B176799009C5719 /* EndpointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointMock.swift; sourceTree = "<group>"; };
+		0B9E19F42B1767F5009C5719 /* NetworkLoggerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggerMock.swift; sourceTree = "<group>"; };
+		0B9E19F72B176B76009C5719 /* NetworkRequestRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestRepresentable.swift; sourceTree = "<group>"; };
+		0B9E19FA2B177406009C5719 /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +168,9 @@
 		0B9E191C2B154429009C5719 /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				0B9E19DE2B16464C009C5719 /* Shared */,
+				0B9E19D62B164156009C5719 /* Utils */,
+				0B9E19B12B1602BB009C5719 /* Infrastructure */,
 				0B9E19752B1550FE009C5719 /* Scenes */,
 				0B9E194D2B154440009C5719 /* Application */,
 				0B9E19262B15442A009C5719 /* Assets.xcassets */,
@@ -134,6 +183,8 @@
 		0B9E19332B15442A009C5719 /* MoviesAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				0B9E19C72B162823009C5719 /* Mocks */,
+				0B9E19C32B162792009C5719 /* Infrastructure */,
 				0B9E19822B1551D1009C5719 /* Scenes */,
 				0B9E19342B15442A009C5719 /* MoviesAppTests.swift */,
 			);
@@ -383,6 +434,106 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		0B9E19B12B1602BB009C5719 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19B32B160311009C5719 /* Logger */,
+				0B9E19B22B1602CE009C5719 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		0B9E19B22B1602CE009C5719 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19F62B176B3C009C5719 /* RequestHandling */,
+				0B9E19E52B1728B3009C5719 /* ErrorHandling */,
+				0B9E19CC2B163476009C5719 /* URLConfiguration.swift */,
+				0B9E19D22B1634CC009C5719 /* NetworkService.swift */,
+				0B9E19DB2B164483009C5719 /* NetworkSessionManager.swift */,
+				0B9E19E22B172292009C5719 /* DataTransferService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0B9E19B32B160311009C5719 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19B42B1603E0009C5719 /* NetworkLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		0B9E19C32B162792009C5719 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19C62B1627CD009C5719 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		0B9E19C62B1627CD009C5719 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19F02B175C24009C5719 /* NetworkServiceTests.swift */,
+				0B9E19FA2B177406009C5719 /* DataTransferServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0B9E19C72B162823009C5719 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19EC2B175B93009C5719 /* URLConfigurationMock.swift */,
+				0B9E19EE2B175BDD009C5719 /* NetworkSessionManagerMock.swift */,
+				0B9E19F22B176799009C5719 /* EndpointMock.swift */,
+				0B9E19F42B1767F5009C5719 /* NetworkLoggerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0B9E19D62B164156009C5719 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19D72B164161009C5719 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0B9E19D72B164161009C5719 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19D82B164199009C5719 /* URLSession + Extension.swift */,
+				0B9E19E92B172929009C5719 /* DispatchQueue+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0B9E19DE2B16464C009C5719 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19DF2B164662009C5719 /* RepositoryTask.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0B9E19E52B1728B3009C5719 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19E62B1728E3009C5719 /* DataTransferError.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		0B9E19F62B176B3C009C5719 /* RequestHandling */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E19CD2B163476009C5719 /* Endpoint.swift */,
+				0B9E19F72B176B76009C5719 /* NetworkRequestRepresentable.swift */,
+			);
+			path = RequestHandling;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -515,17 +666,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9E19D02B163476009C5719 /* Endpoint.swift in Sources */,
+				0B9E19EA2B172929009C5719 /* DispatchQueue+Extension.swift in Sources */,
+				0B9E19B52B1603E0009C5719 /* NetworkLogger.swift in Sources */,
 				0B9E19222B154429009C5719 /* ViewController.swift in Sources */,
 				0B9E19992B15DD39009C5719 /* MoviesListTableViewCell.swift in Sources */,
 				0B9E19A92B15E761009C5719 /* MoviesListRepositoryImpl.swift in Sources */,
 				0B9E19AF2B15ED1E009C5719 /* MovieListResponse.swift in Sources */,
+				0B9E19D92B16419A009C5719 /* URLSession + Extension.swift in Sources */,
+				0B9E19E72B1728E3009C5719 /* DataTransferError.swift in Sources */,
+				0B9E19E32B172292009C5719 /* DataTransferService.swift in Sources */,
+				0B9E19CE2B163476009C5719 /* URLConfiguration.swift in Sources */,
 				0B9E19A52B15E0A7009C5719 /* MoviesListUseCase.swift in Sources */,
 				0B9E19AC2B15ECF0009C5719 /* Movie.swift in Sources */,
 				0B9E19A32B15E012009C5719 /* MoviesListRepository.swift in Sources */,
+				0B9E19D32B1634CC009C5719 /* NetworkService.swift in Sources */,
 				0B9E191E2B154429009C5719 /* AppDelegate.swift in Sources */,
 				0B9E199D2B15DD59009C5719 /* MoviesListViewModel.swift in Sources */,
+				0B9E19E02B164662009C5719 /* RepositoryTask.swift in Sources */,
 				0B9E19202B154429009C5719 /* SceneDelegate.swift in Sources */,
 				0B9E19942B15DC53009C5719 /* MoviesListViewController.swift in Sources */,
+				0B9E19DC2B164483009C5719 /* NetworkSessionManager.swift in Sources */,
+				0B9E19F82B176B76009C5719 /* NetworkRequestRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,12 +695,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9E19D42B1634CC009C5719 /* NetworkService.swift in Sources */,
+				0B9E19B62B1603E0009C5719 /* NetworkLogger.swift in Sources */,
+				0B9E19DA2B16419A009C5719 /* URLSession + Extension.swift in Sources */,
 				0B9E19352B15442A009C5719 /* MoviesAppTests.swift in Sources */,
 				0B9E19A62B15E0A7009C5719 /* MoviesListUseCase.swift in Sources */,
+				0B9E19EF2B175BDD009C5719 /* NetworkSessionManagerMock.swift in Sources */,
+				0B9E19F12B175C24009C5719 /* NetworkServiceTests.swift in Sources */,
+				0B9E19EB2B172929009C5719 /* DispatchQueue+Extension.swift in Sources */,
+				0B9E19F52B1767F5009C5719 /* NetworkLoggerMock.swift in Sources */,
+				0B9E19CB2B1628F3009C5719 /* MoviesListRepository.swift in Sources */,
+				0B9E19D12B163476009C5719 /* Endpoint.swift in Sources */,
+				0B9E19F32B176799009C5719 /* EndpointMock.swift in Sources */,
 				0B9E19AA2B15E761009C5719 /* MoviesListRepositoryImpl.swift in Sources */,
+				0B9E19E12B164662009C5719 /* RepositoryTask.swift in Sources */,
+				0B9E19ED2B175B93009C5719 /* URLConfigurationMock.swift in Sources */,
+				0B9E19E42B172292009C5719 /* DataTransferService.swift in Sources */,
 				0B9E19B02B15ED1E009C5719 /* MovieListResponse.swift in Sources */,
+				0B9E19E82B1728E3009C5719 /* DataTransferError.swift in Sources */,
+				0B9E19DD2B164483009C5719 /* NetworkSessionManager.swift in Sources */,
+				0B9E19CF2B163476009C5719 /* URLConfiguration.swift in Sources */,
+				0B9E19FB2B177406009C5719 /* DataTransferServiceTests.swift in Sources */,
 				0B9E199E2B15DE27009C5719 /* MoviesListViewModel.swift in Sources */,
 				0B9E19AD2B15ECF0009C5719 /* Movie.swift in Sources */,
+				0B9E19F92B176C2D009C5719 /* NetworkRequestRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
