@@ -7,7 +7,14 @@
 
 import Foundation
 
+
 final class MoviesListRepositoryImpl: MoviesListRepository {
+    private let remoteDataSource: DataTransferService
+
+    init(remoteDataSource: DataTransferService) {
+        self.remoteDataSource = remoteDataSource
+    }
+    
     func getMovies() {
         
     }
