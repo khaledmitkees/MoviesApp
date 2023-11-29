@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Movie: Codable {
+struct Movie: Codable, Equatable {
     let adult: Bool
     let backdropPath: String?
     let genreIds: [Int]
@@ -22,4 +22,13 @@ struct Movie: Codable {
     let video: Bool
     let voteAverage: Double
     let voteCount: Int
+    
+    static func == (lhs: Movie, rhs: Movie) -> Bool {
+        return lhs.id == rhs.id &&
+            lhs.title == rhs.title &&
+            lhs.overview == rhs.overview &&
+            lhs.releaseDate == rhs.releaseDate &&
+            lhs.voteAverage == rhs.voteAverage &&
+            lhs.posterPath == rhs.posterPath
+    }
 }
