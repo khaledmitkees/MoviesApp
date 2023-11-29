@@ -880,6 +880,7 @@
 		0B9E19452B15442A009C5719 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "http://api.themoviedb.org/3";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -906,6 +907,7 @@
 		0B9E19462B15442A009C5719 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "http://api.themoviedb.org/3";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
