@@ -18,10 +18,6 @@ class NetworkServiceTests: XCTestCase {
         config = nil
     }
     
-    private enum NetworkErrorMock: Error {
-        case someError
-    }
-
     func test_whenMockDataPassed_shouldReturnProperResponse() {
         //given
         var completionCallsCount = 0
