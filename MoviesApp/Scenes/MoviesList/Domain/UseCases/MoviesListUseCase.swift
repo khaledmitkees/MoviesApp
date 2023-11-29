@@ -11,7 +11,7 @@ protocol MoviesListUseCase {
     func execute()
 }
 
-final class MoviesListUseCaseImpl: MoviesListUseCase {
+final class GetMoviesListUseCaseImpl: MoviesListUseCase {
     private let repository: MoviesListRepository
     
     init(repository: MoviesListRepository) {
