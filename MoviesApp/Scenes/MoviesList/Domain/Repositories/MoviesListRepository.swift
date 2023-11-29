@@ -11,6 +11,6 @@ protocol MoviesListRepository {
     @discardableResult
     func fetchMoviesList(
         page: Int,
-        completion: @escaping (Result<MovieListResponse, Error>) -> Void
+        completion: @escaping (Result<[MoviesListDisplayModel], Error>) -> Void
     ) -> Cancellable?
 }

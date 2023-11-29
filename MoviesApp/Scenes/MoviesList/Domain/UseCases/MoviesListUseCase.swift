@@ -10,7 +10,7 @@ import Foundation
 protocol MoviesListUseCase {
     func execute(
         page: Int,
-        completion: @escaping (Result<MovieListResponse, Error>) -> Void
+        completion: @escaping (Result<[MoviesListDisplayModel], Error>) -> Void
     ) -> Cancellable?
 }
 
@@ -21,7 +21,7 @@ final class GetMoviesListUseCaseImpl: MoviesListUseCase {
         self.repository = repository
     }
     
-    func execute(page: Int, completion: @escaping (Result<MovieListResponse, Error>) -> Void) -> Cancellable? {
+    func execute(page: Int, completion: @escaping (Result<[MoviesListDisplayModel], Error>) -> Void) -> Cancellable? {
         repository.fetchMoviesList(page: 1) { result in
             completion(result)
         }

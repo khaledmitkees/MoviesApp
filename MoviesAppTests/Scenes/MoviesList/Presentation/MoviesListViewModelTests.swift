@@ -26,12 +26,19 @@ class MoviesListViewModelTests: XCTestCase {
 
     func testGetMoviesSuccess() {
         // Given
-        let expectedResponse = MovieListResponse(page: 1, results: [], totalPages: 1, totalResults: 1)
+        let expectedResponse = [MoviesListDisplayModel(
+            title: "title",
+            overview: "overview",
+            posterPath: "posterPath"
+        )]
         mockMoviesListUseCase.mockResult = .success(expectedResponse)
 
         // When
-        viewModel.getMovies()
-
+        viewModel.getMovies { success, error in
+            // Then
+            XCTAssertTrue(success)
+            XCTAssertNil(error)
+        }
         // Then
         XCTAssertEqual(mockMoviesListUseCase.executeCallCount, 1)
         XCTAssertTrue(mockMoviesListUseCase.executeCompletionHandler != nil)
@@ -44,8 +51,11 @@ class MoviesListViewModelTests: XCTestCase {
         mockMoviesListUseCase.mockResult = .failure(expectedError)
 
         // When
-        viewModel.getMovies()
-
+        viewModel.getMovies { success, error in
+            // Then
+            XCTAssertFalse(success)
+            XCTAssertNotNil(error)
+        }
         // Then
         XCTAssertEqual(mockMoviesListUseCase.executeCallCount, 1)
         XCTAssertTrue(mockMoviesListUseCase.executeCompletionHandler != nil)
@@ -58,12 +68,12 @@ class MoviesListViewModelTests: XCTestCase {
 // MockMoviesListUseCase for testing
 class MockMoviesListUseCase: MoviesListUseCase {
     var executeCallCount = 0
-    var executeCompletionHandler: ((Result<MovieListResponse, Error>) -> Void)?
+    var executeCompletionHandler: ((Result<[MoviesListDisplayModel], Error>) -> Void)?
     var cancelCallCount = 0
 
-    var mockResult: Result<MovieListResponse, Error>?
+    var mockResult: Result<[MoviesListDisplayModel], Error>?
 
-    func execute(page: Int, completion: @escaping (Result<MovieListResponse, Error>) -> Void) -> Cancellable? {
+    func execute(page: Int, completion: @escaping (Result<[MoviesListDisplayModel], Error>) -> Void) -> Cancellable? {
         executeCallCount += 1
         executeCompletionHandler = completion
 

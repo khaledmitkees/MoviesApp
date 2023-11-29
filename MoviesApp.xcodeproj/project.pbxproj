@@ -66,6 +66,16 @@
 		0B9E1A082B1794D4009C5719 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E1A072B1794D4009C5719 /* AppConfiguration.swift */; };
 		0B9E1A092B1794D4009C5719 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E1A072B1794D4009C5719 /* AppConfiguration.swift */; };
 		0B9E1A0E2B17A47E009C5719 /* MoviesListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9E1A0D2B17A47E009C5719 /* MoviesListViewController.storyboard */; };
+		0BC0DBBB2B17BF88002CE0E5 /* MoviesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBBA2B17BF88002CE0E5 /* MoviesListRequest.swift */; };
+		0BC0DBBE2B17CBC4002CE0E5 /* GetMoviesListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBBD2B17CBC4002CE0E5 /* GetMoviesListUseCaseTests.swift */; };
+		0BC0DBC02B17CD0D002CE0E5 /* NetworkErrorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBBF2B17CD0D002CE0E5 /* NetworkErrorMock.swift */; };
+		0BC0DBC12B17CF69002CE0E5 /* MoviesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBBA2B17BF88002CE0E5 /* MoviesListRequest.swift */; };
+		0BC0DBC32B17DB8E002CE0E5 /* MoviesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBC22B17DB8E002CE0E5 /* MoviesListViewModelTests.swift */; };
+		0BC0DBC52B17EF9E002CE0E5 /* MoviesListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBC42B17EF9E002CE0E5 /* MoviesListMapper.swift */; };
+		0BC0DBC62B17EF9E002CE0E5 /* MoviesListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBC42B17EF9E002CE0E5 /* MoviesListMapper.swift */; };
+		0BC0DBC82B17F0C4002CE0E5 /* MoviesListDisplayModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBC72B17F0C4002CE0E5 /* MoviesListDisplayModelMapper.swift */; };
+		0BC0DBC92B17F0C4002CE0E5 /* MoviesListDisplayModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBC72B17F0C4002CE0E5 /* MoviesListDisplayModelMapper.swift */; };
+		0BC0DBCE2B17F54E002CE0E5 /* MoviesListMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBCD2B17F54E002CE0E5 /* MoviesListMapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +139,13 @@
 		0B9E1A032B17943F009C5719 /* AppDIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIFactory.swift; sourceTree = "<group>"; };
 		0B9E1A072B1794D4009C5719 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		0B9E1A0D2B17A47E009C5719 /* MoviesListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoviesListViewController.storyboard; sourceTree = "<group>"; };
+		0BC0DBBA2B17BF88002CE0E5 /* MoviesListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListRequest.swift; sourceTree = "<group>"; };
+		0BC0DBBD2B17CBC4002CE0E5 /* GetMoviesListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoviesListUseCaseTests.swift; sourceTree = "<group>"; };
+		0BC0DBBF2B17CD0D002CE0E5 /* NetworkErrorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorMock.swift; sourceTree = "<group>"; };
+		0BC0DBC22B17DB8E002CE0E5 /* MoviesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModelTests.swift; sourceTree = "<group>"; };
+		0BC0DBC42B17EF9E002CE0E5 /* MoviesListMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListMapper.swift; sourceTree = "<group>"; };
+		0BC0DBC72B17F0C4002CE0E5 /* MoviesListDisplayModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListDisplayModelMapper.swift; sourceTree = "<group>"; };
+		0BC0DBCD2B17F54E002CE0E5 /* MoviesListMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				0B9E19A72B15E726009C5719 /* Repositories */,
+				0BC0DBC42B17EF9E002CE0E5 /* MoviesListMapper.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -372,6 +390,7 @@
 		0B9E19892B15523D009C5719 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0BC0DBC22B17DB8E002CE0E5 /* MoviesListViewModelTests.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -379,6 +398,7 @@
 		0B9E198A2B155248009C5719 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				0BC0DBBC2B17CBAA002CE0E5 /* UseCases */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -386,6 +406,7 @@
 		0B9E198B2B15524D009C5719 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0BC0DBCD2B17F54E002CE0E5 /* MoviesListMapperTests.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -421,6 +442,8 @@
 			children = (
 				0B9E19AB2B15ECF0009C5719 /* Movie.swift */,
 				0B9E19AE2B15ED1E009C5719 /* MovieListResponse.swift */,
+				0BC0DBBA2B17BF88002CE0E5 /* MoviesListRequest.swift */,
+				0BC0DBC72B17F0C4002CE0E5 /* MoviesListDisplayModelMapper.swift */,
 			);
 			path = Entites;
 			sourceTree = "<group>";
@@ -503,6 +526,7 @@
 				0B9E19EE2B175BDD009C5719 /* NetworkSessionManagerMock.swift */,
 				0B9E19F22B176799009C5719 /* EndpointMock.swift */,
 				0B9E19F42B1767F5009C5719 /* NetworkLoggerMock.swift */,
+				0BC0DBBF2B17CD0D002CE0E5 /* NetworkErrorMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -563,6 +587,14 @@
 				0B9E1A032B17943F009C5719 /* AppDIFactory.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		0BC0DBBC2B17CBAA002CE0E5 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				0BC0DBBD2B17CBC4002CE0E5 /* GetMoviesListUseCaseTests.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -702,6 +734,7 @@
 				0B9E19EA2B172929009C5719 /* DispatchQueue+Extension.swift in Sources */,
 				0B9E19B52B1603E0009C5719 /* NetworkLogger.swift in Sources */,
 				0B9E19992B15DD39009C5719 /* MoviesListTableViewCell.swift in Sources */,
+				0BC0DBBB2B17BF88002CE0E5 /* MoviesListRequest.swift in Sources */,
 				0B9E19A92B15E761009C5719 /* MoviesListRepositoryImpl.swift in Sources */,
 				0B9E19FD2B178D36009C5719 /* MoviesListFactory.swift in Sources */,
 				0B9E19AF2B15ED1E009C5719 /* MovieListResponse.swift in Sources */,
@@ -717,12 +750,14 @@
 				0B9E19A32B15E012009C5719 /* MoviesListRepository.swift in Sources */,
 				0B9E19D32B1634CC009C5719 /* NetworkService.swift in Sources */,
 				0B9E191E2B154429009C5719 /* AppDelegate.swift in Sources */,
+				0BC0DBC82B17F0C4002CE0E5 /* MoviesListDisplayModelMapper.swift in Sources */,
 				0B9E199D2B15DD59009C5719 /* MoviesListViewModel.swift in Sources */,
 				0B9E19E02B164662009C5719 /* RepositoryTask.swift in Sources */,
 				0B9E19202B154429009C5719 /* SceneDelegate.swift in Sources */,
 				0B9E19942B15DC53009C5719 /* MoviesListViewController.swift in Sources */,
 				0B9E19DC2B164483009C5719 /* NetworkSessionManager.swift in Sources */,
 				0B9E19F82B176B76009C5719 /* NetworkRequestRepresentable.swift in Sources */,
+				0BC0DBC52B17EF9E002CE0E5 /* MoviesListMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,6 +770,7 @@
 				0B9E19DA2B16419A009C5719 /* URLSession + Extension.swift in Sources */,
 				0B9E19352B15442A009C5719 /* MoviesAppTests.swift in Sources */,
 				0B9E19A62B15E0A7009C5719 /* MoviesListUseCase.swift in Sources */,
+				0BC0DBC62B17EF9E002CE0E5 /* MoviesListMapper.swift in Sources */,
 				0B9E19EF2B175BDD009C5719 /* NetworkSessionManagerMock.swift in Sources */,
 				0B9E19F12B175C24009C5719 /* NetworkServiceTests.swift in Sources */,
 				0B9E19EB2B172929009C5719 /* DispatchQueue+Extension.swift in Sources */,
@@ -742,20 +778,26 @@
 				0B9E1A092B1794D4009C5719 /* AppConfiguration.swift in Sources */,
 				0B9E19CB2B1628F3009C5719 /* MoviesListRepository.swift in Sources */,
 				0B9E19D12B163476009C5719 /* Endpoint.swift in Sources */,
+				0BC0DBC92B17F0C4002CE0E5 /* MoviesListDisplayModelMapper.swift in Sources */,
 				0B9E19F32B176799009C5719 /* EndpointMock.swift in Sources */,
+				0BC0DBBE2B17CBC4002CE0E5 /* GetMoviesListUseCaseTests.swift in Sources */,
 				0B9E19AA2B15E761009C5719 /* MoviesListRepositoryImpl.swift in Sources */,
 				0B9E19E12B164662009C5719 /* RepositoryTask.swift in Sources */,
 				0B9E19ED2B175B93009C5719 /* URLConfigurationMock.swift in Sources */,
 				0B9E1A052B17943F009C5719 /* AppDIFactory.swift in Sources */,
 				0B9E19E42B172292009C5719 /* DataTransferService.swift in Sources */,
+				0BC0DBCE2B17F54E002CE0E5 /* MoviesListMapperTests.swift in Sources */,
 				0B9E19B02B15ED1E009C5719 /* MovieListResponse.swift in Sources */,
 				0B9E19E82B1728E3009C5719 /* DataTransferError.swift in Sources */,
+				0BC0DBC32B17DB8E002CE0E5 /* MoviesListViewModelTests.swift in Sources */,
 				0B9E19DD2B164483009C5719 /* NetworkSessionManager.swift in Sources */,
 				0B9E19CF2B163476009C5719 /* URLConfiguration.swift in Sources */,
 				0B9E19FB2B177406009C5719 /* DataTransferServiceTests.swift in Sources */,
 				0B9E199E2B15DE27009C5719 /* MoviesListViewModel.swift in Sources */,
 				0B9E1A012B178F28009C5719 /* StoryboardInstantiable.swift in Sources */,
+				0BC0DBC12B17CF69002CE0E5 /* MoviesListRequest.swift in Sources */,
 				0B9E19AD2B15ECF0009C5719 /* Movie.swift in Sources */,
+				0BC0DBC02B17CD0D002CE0E5 /* NetworkErrorMock.swift in Sources */,
 				0B9E19F92B176C2D009C5719 /* NetworkRequestRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -926,7 +968,8 @@
 		0B9E19452B15442A009C5719 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_BASE_URL = "http://api.themoviedb.org/3";
+				API_BASE_URL = "https://api.themoviedb.org/3/";
+				API_KEY = c9856d0cb57c3f14bf75bdc6c063b8f3;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -954,7 +997,8 @@
 		0B9E19462B15442A009C5719 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_BASE_URL = "http://api.themoviedb.org/3";
+				API_BASE_URL = "https://api.themoviedb.org/3/";
+				API_KEY = c9856d0cb57c3f14bf75bdc6c063b8f3;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

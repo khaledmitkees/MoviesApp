@@ -10,7 +10,7 @@ import Foundation
 class MoviesListFactory {
     static func makeMoviesListViewController() -> MoviesListViewController {
 
-        let repository = MoviesListRepositoryImpl(remoteDataSource: AppDIFactory.apiDataTransferService)
+        let repository = MoviesListRepositoryImpl(remoteDataSource: AppDIFactory.apiDataTransferService, moviesListMapper: MoviesListMapperImpl())
         let useCase = GetMoviesListUseCaseImpl(repository: repository)
         let viewModel = MoviesListViewModel(moviesListUseCase: useCase)
         let viewController = MoviesListViewController()

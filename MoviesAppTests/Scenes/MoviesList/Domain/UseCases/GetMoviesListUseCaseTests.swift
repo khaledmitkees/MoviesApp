@@ -9,11 +9,12 @@ import XCTest
 
 class GetMoviesListUseCaseTests: XCTestCase {
     
-    static let moviesList: MovieListResponse = {
-        let response = MovieListResponse(page: 1,
-                                         results: [],
-                                         totalPages: 1,
-                                         totalResults: 10)
+    static let moviesList: [MoviesListDisplayModel] = {
+        let response = [MoviesListDisplayModel(
+            title: "title",
+            overview: "overview",
+            posterPath: "posterPath"
+        )]
         return response
     }()
     
@@ -22,16 +23,16 @@ class GetMoviesListUseCaseTests: XCTestCase {
     }
         
     class MoviesListRepositoryMock: MoviesListRepository {
-        var result: Result<MovieListResponse, Error>
+        var result: Result<[MoviesListDisplayModel], Error>
         var fetchCompletionCallsCount = 0
 
-        init(result: Result<MovieListResponse, Error>) {
+        init(result: Result<[MoviesListDisplayModel], Error>) {
             self.result = result
         }
 
         func fetchMoviesList(
             page: Int,
-            completion: @escaping (Result<MovieListResponse, Error>
+            completion: @escaping (Result<[MoviesListDisplayModel], Error>
             ) -> Void
         ) -> Cancellable? {
             completion(result)
