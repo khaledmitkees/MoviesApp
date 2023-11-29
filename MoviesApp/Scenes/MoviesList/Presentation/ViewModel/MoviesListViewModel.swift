@@ -12,6 +12,12 @@ protocol MoviesListViewModelContract {
 }
 
 final class MoviesListViewModel: MoviesListViewModelContract {
+    var moviesListUseCase: MoviesListUseCase
+    
+    init(moviesListUseCase: MoviesListUseCase) {
+        self.moviesListUseCase = moviesListUseCase
+    }
+        
     func getMovies() {
         
     }
