@@ -15,8 +15,9 @@ final class AppDIFactory {
     static let apiDataTransferService: DataTransferService = {
         let config = URLConfiguration(
             baseURL: URL(string: appConfiguration.apiBaseURL)!,
-            queryParameters: [
+            headers: [
                 "api_key": appConfiguration.apiKey,
+                "accept": "application/json"
             ]
         )
         
