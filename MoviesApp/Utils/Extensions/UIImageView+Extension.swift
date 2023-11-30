@@ -37,4 +37,16 @@ extension UIImageView {
         }
         return .init(width: newWidth, height: newHeight)
     }
+    
+    var closestImageWidth: Int {
+        let width = self.imageSizeAfterAspectFit.scaledSize.width
+        let sizes = [92, 154, 185, 342, 500, 780]
+
+        let closestWidth = sizes
+            .enumerated()
+            .min { $0.1.distance(to: Int(width)) < $1.1.distance(to: Int(width)) }?
+            .element ?? sizes.first!
+
+        return closestWidth
+    }
 }

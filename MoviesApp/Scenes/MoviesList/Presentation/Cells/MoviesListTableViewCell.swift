@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MoviesListTableViewCell: UITableViewCell {
     
@@ -20,6 +21,9 @@ class MoviesListTableViewCell: UITableViewCell {
     func configure(with movie: MoviesListDisplayModel) {
         movieTitle.text = movie.title
         movieOverView.text = movie.overview
+        
+        let url = URL(string: "\(AppDIFactory.appConfiguration.apiBaseURL)\(movieImageView.closestImageWidth)\(movie.posterPath)")
+        movieImageView.kf.setImage(with: url, placeholder: UIImage(named: "MoviesPlaceholder"))
     }
     
     override func prepareForReuse() {
