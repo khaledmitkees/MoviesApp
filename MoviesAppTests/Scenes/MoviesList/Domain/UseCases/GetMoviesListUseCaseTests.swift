@@ -11,6 +11,7 @@ class GetMoviesListUseCaseTests: XCTestCase {
     
     static let moviesList: [MoviesListDisplayModel] = {
         let response = [MoviesListDisplayModel(
+            id: 1,
             title: "title",
             overview: "overview",
             posterPath: "posterPath"

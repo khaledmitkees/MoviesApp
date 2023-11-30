@@ -16,6 +16,7 @@ final class MoviesListMapperImpl: MoviesListMapper {
     func map(_ response: MovieListResponse) -> [MoviesListDisplayModel] {
         return response.results.map { movie in
             MoviesListDisplayModel(
+                id: movie.id,
                 title: movie.title,
                 overview: movie.overview,
                 posterPath: movie.posterPath ?? ""
