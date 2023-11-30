@@ -11,6 +11,12 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable {
     
     var viewModel: MoviesListViewModel?
     private var moviesListTableView = UITableView()
+    
+    static func create(with viewModel: MoviesListViewModel) -> MoviesListViewController {
+        let view = MoviesListViewController.instantiateViewController()
+        view.viewModel = viewModel
+        return view
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +76,10 @@ extension MoviesListViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.reloadData()
+        guard let viewModel = viewModel else { return }
+        let vc = MoviesDetailsFactory.makeMovieDetailsViewController(movie: viewModel.moviesList[indexPath.row])
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
