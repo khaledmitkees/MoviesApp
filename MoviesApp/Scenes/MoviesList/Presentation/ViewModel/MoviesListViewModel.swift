@@ -15,7 +15,7 @@ final class MoviesListViewModel: MoviesListViewModelContract {
     
     let screenTitle = "Movies List"
     var page = 1
-    var moviesList: [MoviesListDisplayModel] = []
+    var moviesList: [MoviesDisplayModel] = []
     var numberOfMovies: Int { moviesList.count }
     
     private var moviesListUseCase: MoviesListUseCase
@@ -40,14 +40,14 @@ final class MoviesListViewModel: MoviesListViewModelContract {
     }
 }
 
-let moviesListMock: [MoviesListDisplayModel] = [
-    MoviesListDisplayModel(
+let moviesListMock: [MoviesDisplayModel] = [
+    MoviesDisplayModel(
         id: 1,
         title: "Ant-Man and the Wasp: Quantumania",
         overview: "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
         posterPath: "/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
     ),
-    MoviesListDisplayModel(
+    MoviesDisplayModel(
         id: 2,
         title: "The Super Mario Bros. Movie",
         overview: "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",

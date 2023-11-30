@@ -18,7 +18,7 @@ class MoviesListTableViewCell: UITableViewCell {
     @IBOutlet weak var movieOverView: UILabel!
     
 
-    func configure(with movie: MoviesListDisplayModel) {
+    func configure(with movie: MoviesDisplayModel) {
         movieTitle.text = movie.title
         movieOverView.text = movie.overview
         
