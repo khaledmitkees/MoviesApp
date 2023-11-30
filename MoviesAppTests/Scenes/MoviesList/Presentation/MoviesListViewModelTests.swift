@@ -26,7 +26,7 @@ class MoviesListViewModelTests: XCTestCase {
 
     func testGetMoviesSuccess() {
         // Given
-        let expectedResponse = [MoviesListDisplayModel(
+        let expectedResponse = [MoviesDisplayModel(
             id: 1,
             title: "title",
             overview: "overview",
@@ -69,12 +69,12 @@ class MoviesListViewModelTests: XCTestCase {
 // MockMoviesListUseCase for testing
 class MockMoviesListUseCase: MoviesListUseCase {
     var executeCallCount = 0
-    var executeCompletionHandler: ((Result<[MoviesListDisplayModel], Error>) -> Void)?
+    var executeCompletionHandler: ((Result<[MoviesDisplayModel], Error>) -> Void)?
     var cancelCallCount = 0
 
-    var mockResult: Result<[MoviesListDisplayModel], Error>?
+    var mockResult: Result<[MoviesDisplayModel], Error>?
 
-    func execute(page: Int, completion: @escaping (Result<[MoviesListDisplayModel], Error>) -> Void) -> Cancellable? {
+    func execute(page: Int, completion: @escaping (Result<[MoviesDisplayModel], Error>) -> Void) -> Cancellable? {
         executeCallCount += 1
         executeCompletionHandler = completion
 
