@@ -42,14 +42,15 @@ final class MoviesListViewModel: MoviesListViewModelContract {
 
 let moviesListMock: [MoviesListDisplayModel] = [
     MoviesListDisplayModel(
+        id: 1,
         title: "Ant-Man and the Wasp: Quantumania",
         overview: "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
         posterPath: "/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
     ),
     MoviesListDisplayModel(
+        id: 2,
         title: "The Super Mario Bros. Movie",
         overview: "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
         posterPath: "/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
     ),
-    // Add more movies as needed
 ]
