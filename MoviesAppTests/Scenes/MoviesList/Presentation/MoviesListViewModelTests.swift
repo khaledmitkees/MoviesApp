@@ -27,6 +27,7 @@ class MoviesListViewModelTests: XCTestCase {
     func testGetMoviesSuccess() {
         // Given
         let expectedResponse = [MoviesListDisplayModel(
+            id: 1,
             title: "title",
             overview: "overview",
             posterPath: "posterPath"
