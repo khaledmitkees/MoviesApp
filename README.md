@@ -36,6 +36,8 @@ The app follows the principles of Clean Architecture:
 - **Domain Layer:** Defines entities, use cases, and business logic.
 - **Data Layer:** Manages the flow of data between the app and external sources.
 
+![image](https://github.com/khaledmitkees/MoviesApp/assets/42773250/c2d7c067-9532-4021-bab5-c17a5a706f99)
+
 ## Network Layer
 
 The app uses a network layer to communicate with external APIs, including:
