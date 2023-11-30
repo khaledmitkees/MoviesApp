@@ -24,7 +24,7 @@ final class MoviesListRepositoryImpl: MoviesListRepository {
     
     func fetchMoviesList(
         page: Int,
-        completion: @escaping (Result<[MoviesListDisplayModel], Error>) -> Void
+        completion: @escaping (Result<[MoviesDisplayModel], Error>) -> Void
     ) -> Cancellable? {
         
         let task = RepositoryTask()

@@ -13,8 +13,7 @@ class MoviesListFactory {
         let repository = MoviesListRepositoryImpl(remoteDataSource: AppDIFactory.apiDataTransferService, moviesListMapper: MoviesListMapperImpl())
         let useCase = GetMoviesListUseCaseImpl(repository: repository)
         let viewModel = MoviesListViewModel(moviesListUseCase: useCase)
-        let viewController = MoviesListViewController()
-        viewController.viewModel = viewModel
+        let viewController = MoviesListViewController.create(with: viewModel)
         
         return viewController
     }
