@@ -22,7 +22,7 @@ class MoviesListTableViewCellTests: XCTestCase {
         cell.movieOverView = movieOverView
         cell.movieImageView = movieImageView
 
-        let mockMovie = MoviesListDisplayModel(
+        let mockMovie = MoviesDisplayModel(
             id: 1,
             title: "Mock Movie",
             overview: "Mock Overview",
