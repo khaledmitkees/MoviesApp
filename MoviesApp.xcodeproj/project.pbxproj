@@ -81,6 +81,8 @@
 		0BC0DBD12B17FDA6002CE0E5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBCF2B17FDA6002CE0E5 /* UIImageView+Extension.swift */; };
 		0BC0DBD32B17FDE1002CE0E5 /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBD22B17FDE1002CE0E5 /* CGSize+Extension.swift */; };
 		0BC0DBD42B17FDE1002CE0E5 /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBD22B17FDE1002CE0E5 /* CGSize+Extension.swift */; };
+		0BC0DBD72B180D0E002CE0E5 /* MoviesListTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0DBD62B180D0E002CE0E5 /* MoviesListTableViewCellTests.swift */; };
+		0BC0DBD82B180D3A002CE0E5 /* MoviesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E19972B15DD39009C5719 /* MoviesListTableViewCell.swift */; };
 		888FE6D1F30E24955F98DC26 /* Pods_MoviesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95420695528E9E9BEC1D6FA0 /* Pods_MoviesApp.framework */; };
 		E60C6CD7D004AF4AFB84372E /* Pods_MoviesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4E27AB4071013780C52AE8 /* Pods_MoviesAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -155,6 +157,7 @@
 		0BC0DBCD2B17F54E002CE0E5 /* MoviesListMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListMapperTests.swift; sourceTree = "<group>"; };
 		0BC0DBCF2B17FDA6002CE0E5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		0BC0DBD22B17FDE1002CE0E5 /* CGSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
+		0BC0DBD62B180D0E002CE0E5 /* MoviesListTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListTableViewCellTests.swift; sourceTree = "<group>"; };
 		4061D7880151D3873E0C29A2 /* Pods-MoviesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MoviesAppTests/Pods-MoviesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		590023D8CA295EC0153CDBA6 /* Pods-MoviesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesAppTests.release.xcconfig"; path = "Target Support Files/Pods-MoviesAppTests/Pods-MoviesAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		61A6B86AA579DB98A9E00C68 /* Pods-MoviesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesApp.release.xcconfig"; path = "Target Support Files/Pods-MoviesApp/Pods-MoviesApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -413,6 +416,7 @@
 		0B9E19892B15523D009C5719 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0BC0DBD52B180CF9002CE0E5 /* Cells */,
 				0BC0DBC22B17DB8E002CE0E5 /* MoviesListViewModelTests.swift */,
 			);
 			path = Presentation;
@@ -620,6 +624,14 @@
 				0BC0DBBD2B17CBC4002CE0E5 /* GetMoviesListUseCaseTests.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0BC0DBD52B180CF9002CE0E5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0BC0DBD62B180D0E002CE0E5 /* MoviesListTableViewCellTests.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		83F9629D0756861B54BE7E03 /* Pods */ = {
@@ -951,6 +963,8 @@
 				0BC0DBC32B17DB8E002CE0E5 /* MoviesListViewModelTests.swift in Sources */,
 				0B9E19DD2B164483009C5719 /* NetworkSessionManager.swift in Sources */,
 				0B9E19CF2B163476009C5719 /* URLConfiguration.swift in Sources */,
+				0BC0DBD82B180D3A002CE0E5 /* MoviesListTableViewCell.swift in Sources */,
+				0BC0DBD72B180D0E002CE0E5 /* MoviesListTableViewCellTests.swift in Sources */,
 				0B9E19FB2B177406009C5719 /* DataTransferServiceTests.swift in Sources */,
 				0B9E199E2B15DE27009C5719 /* MoviesListViewModel.swift in Sources */,
 				0B9E1A012B178F28009C5719 /* StoryboardInstantiable.swift in Sources */,
@@ -1195,6 +1209,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
@@ -1215,6 +1230,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
@@ -1234,6 +1250,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.khaled.MoviesAppUITests;
@@ -1252,6 +1269,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.khaled.MoviesAppUITests;
